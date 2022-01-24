@@ -1,7 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root {
+	--primary-color: #007af3; /*like a constant value so we dont have to hard-code*/
+}
+
 body {
 	background: #f2f2f2;
 	margin: 0;
 	font-family: "Poppins";
+}
+
+.navbar {
+	background: white;
+	padding: 1em;
+
+	.logo {
+		text-decoration: none; /*Removes the underline below the logo text*/
+		font-weight: bold; /*bold or not*/
+		color: black; /*text-color*/
+		font-size: 1.2em;
+
+		span {
+			color: var(--primary-color);
+		}
+	}
+
+	nav {
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		place-content: space-between;
+	}
+
+	.mobile-menu {
+		cursor: pointer;
+	}
 }
