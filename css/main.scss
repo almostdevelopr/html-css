@@ -340,7 +340,7 @@ nav {
 		position: absolute;
 		right: 0;
 		width: 350px;
-		bottom: 0;
+		bottom: -2em;
 	}
 	.testimonial-section ul {
 		display: flex;
@@ -354,6 +354,40 @@ nav {
 
 		.container {
 			display: flex;
+		}
+	}
+	.contact-right {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 45%;
+		height: 100%;
+
+		iframe {
+			height: 100%;
+		}
+	}
+}
+@media only screen and (min-width: 1450px) {
+	.feature-section {
+		&:before {
+			content: "";
+			position: absolute;
+			width: 10%;
+			height: 20em;
+			background: var(--primary-color);
+			left: 0;
+			top: -4em;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 200px;
+			height: 20em;
+			background: url("../images/dots.svg");
+			left: 4.5em;
+			top: -4em;
 		}
 	}
 }
