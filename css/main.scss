@@ -211,6 +211,7 @@ nav {
 	height: 100vh; // viewing size of the device
 	padding: 1em;
 
+	/*To alighn with the logo and stuff*/
 	ul.primary-nav {
 		margin-top: 5em;
 	}
@@ -218,7 +219,7 @@ nav {
 	li {
 		a {
 			color: white;
-			text-decoration: none;
+			text-decoration: none; /*removes underline of anchor elements*/
 			display: block;
 			padding: 0.5em;
 			font-size: 1.3em;
